@@ -1,4 +1,5 @@
 
+
 INSERT INTO instructors (instructor_name, email)
 VALUES
     ('chakriya', 'chakriya@gmail.com'),

@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class InstructorsResquest {
+
+    private Long instructorId;
     private String instructorName;
     private String email;
 }
