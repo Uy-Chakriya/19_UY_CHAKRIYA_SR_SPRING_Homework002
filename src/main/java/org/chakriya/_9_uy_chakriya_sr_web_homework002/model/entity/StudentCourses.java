@@ -6,9 +6,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Students {
+public class StudentCourses {
     private Long studentId;
-    private String studentName;
-    private String email;
-    private Integer phoneNumber;
+    private Long courseId;
 }

@@ -5,29 +5,30 @@ import java.util.List;
 
 @Mapper
 public interface StudentsRepository {
-    @Results(id = "studentMapper", value = {
-            @Result(property = "studentId", column = "student_id"),
-            @Result(property = "studentName", column = "student_name"),
-            @Result(property = "phoneNumber", column = "phone_number"),
-    })
 
-    @ResultMap("studentMapper")
-    @Select("""
-        select * from students LIMIT #{size} OFFSET #{offset}
-
-""")
-    static List<Students> getAllStudents(Integer offset, Integer size) {
-        return getAllStudents(offset, size);
-    }
-
-
-    @ResultMap("studentMapper")
-    @Select("""
-        select * from students where id = #{studentId}
-""")
-    static Students getStudentsByID(Long studentId) {
-        return getStudentsByID(studentId) ;
-
-}
+//    @Results(id = "studentMapper", value = {
+//            @Result(property = "studentId", column = "student_id"),
+//            @Result(property = "studentName", column = "student_name"),
+//            @Result(property = "phoneNumber", column = "phone_number"),
+//    })
+//
+//    @ResultMap("studentMapper")
+//    @Select("""
+//        select * from students LIMIT #{size} OFFSET #{offset}
+//
+//""")
+//    static List<Students> getAllStudents(Integer offset, Integer size) {
+//        return getAllStudents(offset, size);
+//    }
+//
+//
+//    @ResultMap("studentMapper")
+//    @Select("""
+//        select * from students where id = #{studentId}
+//""")
+//    static Students getStudentsByID(Long studentId) {
+//        return getStudentsByID(studentId) ;
+//
+//}
 
 }
